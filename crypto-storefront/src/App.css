@@ -1,0 +1,123 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #c2a5a5;
+  padding: 20px;
+}
+
+.crypto-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+/* App.css */
+
+/* Crypto cards */
+.crypto-card {
+  background-color: #2e2a2c;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+
+  /* Text color */
+  h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+  }
+
+  /* Buy button */
+  button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  /* Quantity input */
+  input[type="number"] {
+    margin-top: 10px;
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}
+
+/* Cart */
+.cart {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+
+  /* Cart title */
+  h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+
+   /* Cart items list */
+   ul {
+    list-style: none;
+    padding: 0;
+    background-color: #f9f9f9; /* Background color for the cart list */
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+  }
+
+  /* Remove bullet points */
+  li::before {
+    content: "";
+  }
+
+  /* Bold font for cart item names and cost */
+  .item-name {
+    font-weight: bold;
+  }
+
+  .item-cost {
+    font-weight: bold;
+    color: #007bff; /* Blue color for cost */
+  }
+}
